@@ -18,8 +18,8 @@
   .text-button,
   .icon-button {
     @include pos-center-y;
-    right: -15px;
-    padding: 15px;
+    right: -#{$grid-margin};
+    padding: $grid-margin;
 
     &:active,
     &:hover {
@@ -34,8 +34,8 @@
 
   .icon-button {
     @include flexbox;
-    width: 22px + (15px * 2);
-    height: 22px + (15px * 2);
+    width: 22px + ($grid-margin * 2);
+    height: 22px + ($grid-margin * 2);
     font-size: 22px;
     color: $secondary;
 
