@@ -3,7 +3,7 @@
 
   &-divider {
     height: 8px;
-    margin: 0 -15px; //따로 빼기 작업 할것
+    margin: 0 -#{$grid-margin};
     background-color: $border;
   }
 
