@@ -102,3 +102,27 @@
   </a>
 </div>
 ```
+
+### 3. Review-card
+
+- 리뷰가 0개일 경우
+
+```html
+<section
+  id="product-review"
+  class="product-section product-review"
+  role="tabpanel"
+>
+  <header class="product-section-header">
+    <h1 class="title">리뷰</h1>
+    <strong class="badge" aria-label="0개">0</strong>
+    <a href="/" class="text-button">리뷰쓰기</a>
+  </header>
+  <div class="product-section-content">
+    <p class="review-empty">
+      첫 리뷰를 남겨주세요! <br />
+      최대 <strong>500P</strong>를 드립니다.
+    </p>
+  </div>
+</section>
+```
