@@ -40,6 +40,10 @@
 
     .avatar-32 {
       margin-right: 8px;
+
+      &:active {
+        opacity: 0.4;
+      }
     }
 
     .username {
@@ -47,8 +51,22 @@
       flex-grow: 1; //공간이 좀 남으면 커져도 좋다.
       padding-right: 8px;
       font-weight: 700;
-    }
 
-    // .order {}
+      &:active {
+        color: $blue;
+      }
+    }
+  }
+
+  @include responsive(D) {
+    &-detail {
+      .avatar-32:hover {
+        opacity: 0.4;
+      }
+
+      .username:hover {
+        color: $blue;
+      }
+    }
   }
 }
