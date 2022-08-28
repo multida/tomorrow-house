@@ -1,4 +1,4 @@
-const reviewLikeButton = document.querySelector('.review-card-footer button');
+const reviewLikeButtonList = document.querySelectorAll('.review-card-footer button');
 const HELPFUL = "도움됨";
 const NOT_HELPFUL = "도움이 돼요";
 
@@ -60,4 +60,7 @@ function toggleReviewLikeButton() {
   this.classList.toggle('btn-outlined');
 }
 
-reviewLikeButton.addEventListener('click', toggleReviewLikeButton);
+reviewLikeButtonList.forEach((button) => {
+  button.addEventListener('click', toggleReviewLikeButton);
+});
+
