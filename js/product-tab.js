@@ -134,5 +134,5 @@ function updateActiveTabOnScroll() {
 }
 
 window.addEventListener('load', detectTabPanelPosition);//모든 페이지가 다 로드 됐을때 함수 실행
-window.addEventListener('resize', detectTabPanelPosition);//화면 사이즈가 바뀌면 업데이트
-window.addEventListener('scroll', updateActiveTabOnScroll)
+window.addEventListener('resize', _.throttle(detectTabPanelPosition, 1000));//화면 사이즈가 바뀌면 업데이트
+window.addEventListener('scroll', _.throttle(updateActiveTabOnScroll, 300));
