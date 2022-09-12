@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "node-sass": "node-sass",
-    "sass": "node-sass -wr --source-map true styles/main.scss ./style.css"
+    "sass": "node-sass -wr --source-map true styles/main.scss ./style.css",
+    "build": "node ./scripts/build.js",
+    "deploy": "node ./scripts/deploy.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,14 @@
   "homepage": "https://github.com/multida/tomorrow-house#readme",
   "dependencies": {
     "node-sass": "^6.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.9",
+    "cssnano": "^5.1.13",
+    "fs-extra": "^10.1.0",
+    "gh-pages": "^4.0.0",
+    "imagemin": "^8.0.1",
+    "imagemin-jpegtran": "^7.0.0",
+    "postcss": "^8.4.16"
   }
 }
